@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.application.ChangesScreenController">
+   <children>
+      <fx:include source="adminMenuBar.fxml" />
+      <Label layoutX="28.0" layoutY="74.0" text="Pregled promjena vrijednosti izvršenih nad vozilima">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="changesTableView" layoutX="12.0" layoutY="110.0" prefHeight="279.0" prefWidth="695.0">
+        <columns>
+            <TableColumn fx:id="userTableColumn" prefWidth="81.0" text="Korisnik" />
+            <TableColumn fx:id="carTableColumn" prefWidth="119.0" text="Vozilo" />
+          <TableColumn fx:id="changeTableColumn" prefWidth="113.0" text="Promjena u" />
+          <TableColumn fx:id="newValueTableColumn" prefWidth="127.0" text="Nova vrijednost" />
+            <TableColumn fx:id="oldValueTableColumn" prefWidth="121.0" text="Stara vrijednost" />
+            <TableColumn fx:id="dateTimeTableColumn" prefWidth="133.0" text="Vrijeme i datum" />
+        </columns>
+      </TableView>
+
+   </children>
+</AnchorPane>

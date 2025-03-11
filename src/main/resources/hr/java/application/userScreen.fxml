@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.application.UserScreenController">
+   <children>
+      <GridPane layoutX="15.0" layoutY="23.0" prefHeight="363.0" prefWidth="563.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="283.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="280.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="115.0" minHeight="0.0" prefHeight="29.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="115.0" minHeight="0.0" prefHeight="41.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="115.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="242.0" minHeight="10.0" prefHeight="214.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#logout" text="Odjava" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.valignment="TOP" />
+            <Button mnemonicParsing="false" onAction="#showNewCarScreen" text="Novo vozilo" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#showDetails" text="Detalji" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#deleteCar" text="Obrisi" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <TextField fx:id="SearchTextField" onKeyPressed="#carSearch" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></TextField>
+            <Button mnemonicParsing="false" onAction="#carSearch" text="Pretraga" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TableView fx:id="electricCarTableView" prefHeight="204.0" prefWidth="487.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+              <columns>
+                <TableColumn fx:id="ecarManufacturerTableColumn" prefWidth="79.0" text="Marka" />
+                <TableColumn fx:id="ecarModelTableColumn" prefWidth="93.0" text="Model" />
+                  <TableColumn fx:id="ecarRegistrationTableColumn" prefWidth="103.0" text="Registracija" />
+              </columns>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TableView>
+            <TableView fx:id="fuelCarTableView" prefHeight="218.0" prefWidth="281.0" GridPane.rowIndex="3">
+              <columns>
+                <TableColumn fx:id="fcarManufacturerTableColumn" prefWidth="84.0" text="Marka" />
+                <TableColumn fx:id="fcarModelTableColumn" prefWidth="90.0" text="Model" />
+                  <TableColumn fx:id="fcarRegistrationTableColumn" prefWidth="105.0" text="Registracija" />
+              </columns>
+               <GridPane.margin>
+                  <Insets right="2.0" />
+               </GridPane.margin>
+            </TableView>
+            <Label text="Gorivo" GridPane.rowIndex="2" />
+            <Label text="Baterija" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="user" prefHeight="35.0" prefWidth="275.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

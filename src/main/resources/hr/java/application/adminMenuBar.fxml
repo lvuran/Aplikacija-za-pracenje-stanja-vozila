@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="28.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.application.AdminMenuBarController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="711.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Promjene">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showChanges" text="Prikaži promjene" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Korisnici">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showUsers" text="Prikaži korisnike" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Vozila">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showVehicles" text="Prikaži vozila" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="29.0" layoutY="33.0" text="ADMIN">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="644.0" layoutY="39.0" mnemonicParsing="false" onAction="#logout" text="Odjava" />
+   </children>
+</AnchorPane>
