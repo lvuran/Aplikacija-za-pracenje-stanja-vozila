@@ -1,0 +1,10 @@
+2024-01-31 12:39:09,633 ERROR [JavaFX Application Thread] h.j.a.LoginController [LoginController.java:111] hr.java.exeptions.UserNotRegisteredExeption: Uneseno korisničko ime nije registrirano.
+2024-01-31 13:08:50,976 ERROR [JavaFX Application Thread] h.j.a.LoginController [UsernameDuplicateExeption.java:11] Uneseno korisničko ime je već registrirano.
+2024-01-31 13:08:50,979 ERROR [JavaFX Application Thread] h.j.a.LoginController [NewUserScreenController.java:72] hr.java.exeptions.UsernameDuplicateExeption: Uneseno korisničko ime je već registrirano.
+2024-01-31 13:09:20,300 ERROR [JavaFX Application Thread] h.j.a.LoginController [PasswordsNotMatchingExeption.java:13] Unesene su različite lozinke.
+2024-01-31 13:09:20,301 ERROR [JavaFX Application Thread] h.j.a.LoginController [NewUserScreenController.java:88] hr.java.exeptions.PasswordsNotMatchingExeption: Unesene su različite lozinke.
+2024-01-31 13:10:32,048 ERROR [JavaFX Application Thread] h.j.a.LoginController [RegistrationNumberDuplicateExeption.java:11] Već postoji vozilo unesene registarske oznake.
+2024-01-31 13:10:32,048 ERROR [JavaFX Application Thread] h.j.a.LoginController [NewCarScreenController.java:95] hr.java.exeptions.RegistrationNumberDuplicateExeption: Već postoji vozilo unesene registarske oznake.
+2024-01-31 14:07:09,420 ERROR [JavaFX Application Thread] h.j.a.LoginController [AdminMenuBarController.java:88] javafx.fxml.LoadException: 
+/C:/Users/Lejla/Documents/JAVA%20SEMINARSKI/Pracenje%20stanja%20vozila%20-%20Seminarski/target/classes/hr/java/application/vehicles.fxml
+
